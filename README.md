@@ -1,66 +1,11 @@
-## Foundry
+# Assignment
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## SimpleToken
 
-Foundry consists of:
+A minimal Solidity smart contract that implements a basic token system.
+It allows the owner to mint new tokens and lets users transfer tokens between each other.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Decentralization Rationale, In 3–4 sentences, explain why decentralization is important for modern platforms.
 
-## Documentation
+Decentralization is important for modern platforms as it removes dependency on a single controlling authority reducing the risk of censorship, data manipulation and system failures. By distributing data over a large network, it increases security & transparency. This structure encourages trust among users, as validations are handled collectively rather than by a central authority. Additionally, decentralization enables fairer participation in digital ecosystems, especially in areas like finance, crowdfunding and prize draws.
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
