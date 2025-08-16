@@ -7,10 +7,9 @@ pragma solidity ^0.8.18;
  * @author Gaurav Kumar
  * @notice A token contract that allows owner to mint tokens and allows users to transfer tokens between each other
  */
-
 contract SimpleToken {
     mapping(address => uint256) private s_balances; //maps people's address to their balances.
-    uint256 private totalSupply;  //Total supply of tokens
+    uint256 private totalSupply; //Total supply of tokens
 
     address public owner; //the owner of contract (account that deployed it).
 
@@ -51,7 +50,7 @@ contract SimpleToken {
      * @dev for knowing its 18 zeros in one ether
      */
     function decimals() public pure returns (uint8) {
-        return 18; 
+        return 18;
     }
 
     /**
@@ -80,7 +79,7 @@ contract SimpleToken {
      */
     function transfer(address _to, uint256 _amount) public returns (bool) {
         require(s_balances[msg.sender] >= _amount, "Not enough balance");
-        
+
         s_balances[msg.sender] -= _amount; // Deducted from sender
         s_balances[_to] += _amount; //Amt added to receiver
 
