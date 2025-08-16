@@ -71,7 +71,7 @@ contract SimpleToken {
         s_balances[_to] += _amount;
 
         emit Mint(_to, _amount);
-        emit Transfer(address(0), _to, _amount); // Standard practice to log mint
+        emit Transfer(address(0), _to, _amount);
     }
 
     /**
