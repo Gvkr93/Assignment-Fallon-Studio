@@ -1,13 +1,12 @@
 # Assignment
 
+The smart contract code is located at:
+"src/SimpleToken.sol"
+
 ## SimpleToken
 
 A minimal Solidity smart contract that implements a basic token system.
 It allows the owner to mint new tokens and lets users transfer tokens between each other.
-
-The smart contract code is located at:
-src/SimpleToken.sol
-
 
 ## Decentralization Rationale, In 3–4 sentences, explain why decentralization is important for modern platforms.
 
